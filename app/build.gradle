@@ -42,32 +42,32 @@ android {
         jvmTarget = '1.8'
     }
 
-    sourceSets {
-        vesta {
-          java.srcDirs = [
-                  'main/java',
-                  'vesta/java'
-          ]
-
-
-            resources.srcDirs = [
-                    'main/res',
-                    'vesta/res'
-            ]
-        }
-
-        vestb {
-            java.srcDirs = [
-                    'main/java',
-                    'vestb/java'
-            ]
-
-            resources.srcDirs = [
-                    'main/res',
-                    'vestb/res'
-            ]
-        }
-    }
+//    sourceSets {
+//        vesta {
+//          java.srcDirs = [
+//                  'main/java',
+//                  'vesta/java'
+//          ]
+//
+//
+//            resources.srcDirs = [
+//                    'main/res',
+//                    'vesta/res'
+//            ]
+//        }
+//
+//        vestb {
+//            java.srcDirs = [
+//                    'main/java',
+//                    'vestb/java'
+//            ]
+//
+//            resources.srcDirs = [
+//                    'main/res',
+//                    'vestb/res'
+//            ]
+//        }
+//    }
 }
 
 dependencies {

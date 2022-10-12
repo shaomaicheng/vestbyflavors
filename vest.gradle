@@ -1,0 +1,40 @@
+
+android {
+
+    productFlavors {
+        vesta {
+        }
+
+        vestb {
+        }
+    }
+    flavorDimensions "product"
+
+
+//    sourceSets {
+//        vesta {
+//            java.srcDirs = [
+//                    'main/java',
+//                    'vesta/java'
+//            ]
+//
+//
+//            resources.srcDirs = [
+//                    'main/res',
+//                    'vesta/res'
+//            ]
+//        }
+//
+//        vestb {
+//            java.srcDirs = [
+//                    'main/java',
+//                    'vestb/java'
+//            ]
+//
+//            resources.srcDirs = [
+//                    'main/res',
+//                    'vestb/res'
+//            ]
+//        }
+//    }
+}

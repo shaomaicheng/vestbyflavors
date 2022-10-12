@@ -2,19 +2,20 @@ plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
+apply from: '../vest.gradle'
 
 android {
     namespace 'com.chenglei.biztoast'
     compileSdk 32
 
-    productFlavors {
-        vesta {
-        }
-
-        vestb {
-        }
-    }
-    flavorDimensions "product"
+//    productFlavors {
+//        vesta {
+//        }
+//
+//        vestb {
+//        }
+//    }
+//    flavorDimensions "product"
 
     defaultConfig {
         minSdk 21
