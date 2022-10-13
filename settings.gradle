@@ -15,3 +15,5 @@ dependencyResolutionManagement {
 rootProject.name = "vest"
 include ':app'
 include ':biz_toast'
+include ':biz_common'
+include ':normal'

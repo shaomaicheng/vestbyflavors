@@ -8,3 +8,14 @@ plugins {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+project.allprojects {it->
+//    println "-----------"
+//    println it.configurations
+    configurations.all {
+        println it
+    }
+}
+
+//configurations.all {it->
+//}

@@ -2,27 +2,19 @@ plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
-apply from: '../vest.gradle'
+//apply from: '../vest.gradle'
 
 android {
-    namespace 'com.chenglei.biztoast'
     compileSdk 32
 
-//    productFlavors {
-//        vesta {
-//        }
-//
-//        vestb {
-//        }
-//    }
-//    flavorDimensions "product"
-
     defaultConfig {
-        minSdk 21
+        minSdk 22
         targetSdk 32
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
+
+//        missingDimensionStrategy "product", "vesta","vestb"
     }
 
     buildTypes {
@@ -39,41 +31,16 @@ android {
         jvmTarget = '1.8'
     }
 
-    sourceSets {
-        vesta {
-            java.srcDirs = [
-                    'main/java',
-                    'vesta/java'
-            ]
 
-
-            resources.srcDirs = [
-                    'main/res',
-                    'vesta/res'
-            ]
-        }
-
-        vestb {
-            java.srcDirs = [
-                    'main/java',
-                    'vestb/java'
-            ]
-
-            resources.srcDirs = [
-                    'main/res',
-                    'vestb/res'
-            ]
-        }
-    }
 }
 
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.6.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-    api project(':normal')
+    api project(":biz_toast")
 }

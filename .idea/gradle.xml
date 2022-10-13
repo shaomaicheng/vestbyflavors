@@ -11,7 +11,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/biz_common" />
             <option value="$PROJECT_DIR$/biz_toast" />
+            <option value="$PROJECT_DIR$/normal" />
           </set>
         </option>
       </GradleProjectSettings>
