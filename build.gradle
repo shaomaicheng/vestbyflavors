@@ -9,13 +9,22 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
+
+//project.subprojects.each { it ->
+//    pluginManager.withPlugin("com.android.library") {
+//        println "执行"
+//    }
+//}
 project.allprojects {it->
-//    println "-----------"
-//    println it.configurations
-    configurations.all {
-        println it
+    if (it.name == "biz_common") {
+        pluginManager.withPlugin("com.android.library") {
+            println "执行"
+            android {
+                defaultConfig {
+                    missingDimensionStrategy "product", "vesta"
+                    missingDimensionStrategy "product", "vestb"
+                }
+            }
+        }
     }
 }
-
-//configurations.all {it->
-//}
